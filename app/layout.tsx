@@ -27,6 +27,11 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en" className={roboto_flex.className}>
+      <body className="relative z-10">
+        <div className="test-blue mx-auto bg-white">
+          <Header />
+          {children}
+        </div>
       </body>
     </html>
   )
