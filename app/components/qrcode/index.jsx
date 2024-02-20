@@ -11,7 +11,9 @@ const Qrcode = () => (
       {/* <ImageWithFixedSize src={qrcode} width={145} height={145} />
       <img src={qrcode} alt="" /> */}
       <Image src={qrcode} alt="qrcode for redTool" />
-      <span className="text-sm lowercase text-stone-300">
+      <span
+        className="text-sm lowercase text-gray-800
+      ">
         redtool.darrickdevelops.com
       </span>
     </div>
