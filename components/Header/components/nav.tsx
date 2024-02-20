@@ -15,7 +15,7 @@ function Nav() {
   return (
     <nav className="relative flex justify-between items-center py-[.65em]">
       <Link
-        className="flex items-center text-[1.2rem] font-bold text-white no-underline m-0 p-0 leading-none"
+        className="flex items-center gap-2 text-[1.2rem] font-bold text-white no-underline m-0 p-0 leading-none"
         href="/">
         <Icon
           className="h-8 w-8 -mt-[6px] -mr-[3px] translate-y-[10%] -rotate-[15deg]"
