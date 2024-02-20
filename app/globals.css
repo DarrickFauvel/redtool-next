@@ -3,27 +3,45 @@
 @tailwind utilities;
 
 :root {
-  --foreground-rgb: 0, 0, 0;
+  /* --foreground-rgb: 0, 0, 0;
   --background-start-rgb: 214, 219, 220;
-  --background-end-rgb: 255, 255, 255;
+  --background-end-rgb: 255, 255, 255; */
+
+  --color-red-40: hsl(0, 100%, 40%);
+  --color-red-33: hsl(0, 100%, 33%);
+  --color-red-24: hsl(0, 100%, 24%);
+  /* --color-gray-20: hsl(0, 0%, 20%); */
+  --color-gray-20-rgb: 51, 51, 51;
+  --color-gray-136: hsl(0, 0%, 53%);
+  --color-white-100: hsl(0, 0%, 100%);
+  --color-black-0: hsl(0, 0%, 0%);
+  --color-gray: hsl(0, 0%, 50%);
+  --color-lightgray: hsl(0, 0%, 83%);
+  --color-darkgray: #a8a8a8;
+  /* --cname-charcoal: #36454f; */
+  --cname-charcoal-rgb: 54, 69, 79;
+
+  --screen-width-max: 769px;
 }
 
-@media (prefers-color-scheme: dark) {
+/* @media (prefers-color-scheme: dark) {
   :root {
     --foreground-rgb: 255, 255, 255;
     --background-start-rgb: 0, 0, 0;
     --background-end-rgb: 0, 0, 0;
   }
-}
+} */
 
 body {
-  color: rgb(var(--foreground-rgb));
-  background: linear-gradient(
+  /* color: rgb(var(--foreground-rgb)); */
+  color: rgb(var(--color-gray-20-rgb));
+  /* background: linear-gradient(
       to bottom,
       transparent,
       rgb(var(--background-end-rgb))
     )
-    rgb(var(--background-start-rgb));
+    rgb(var(--background-start-rgb)); */
+  background: var(--cname-charcoal-rgb);
 }
 
 @layer utilities {
