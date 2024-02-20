@@ -1,9 +1,19 @@
 import type { Metadata } from "next"
-import { Inter } from "next/font/google"
+import { Roboto } from "next/font/google"
+import { Roboto_Flex } from "next/font/google"
 import "./globals.css"
 import Header from "../components/Header"
 
-const inter = Inter({ subsets: ["latin"] })
+const roboto = Roboto({
+  weight: "500",
+  subsets: ["latin"],
+  display: "swap",
+})
+const roboto_flex = Roboto_Flex({
+  weight: "500",
+  subsets: ["latin"],
+  display: "swap",
+})
 
 export const metadata: Metadata = {
   title: "redTool",
@@ -16,10 +26,12 @@ export default function RootLayout({
   children: React.ReactNode
 }>) {
   return (
-    <html lang="en">
-      <body className={inter.className}>
-        <Header />
-        {children}
+    <html lang="en" className={roboto_flex.className}>
+      <body className="relative z-10">
+        <div className="test-blue mx-auto bg-white">
+          <Header />
+          {children}
+        </div>
       </body>
     </html>
   )

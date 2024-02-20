@@ -44,6 +44,19 @@ body {
   background: var(--cname-charcoal-rgb);
 }
 
+.test-red {
+  outline: 2px solid red;
+}
+.test-green {
+  outline: 2px solid green;
+}
+.test-blue {
+  outline: 2px solid blue;
+}
+.test-purple {
+  outline: 2px solid purple;
+}
+
 @layer utilities {
   .text-balance {
     text-wrap: balance;

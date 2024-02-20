@@ -38,7 +38,7 @@ const Drawer = ({ isMenuOpen, setIsMenuOpen }: DrawerProps) => {
       ref={drawerRef}
       // className={`${classes.drawer} ${$isMenuOpen && `${classes.open}`}`}
       className={`flex flex-col gap-6 absolute top-0 -right-[230px] h-screen w-[230px] bg-zinc-800 text-white z-50 opacity-0 duration-200 ${
-        isMenuOpen ? "opacity-100 -right-4" : null
+        isMenuOpen ? "opacity-100 -right-[16px]" : null
       }`}>
       <div className="flex justify-end items-center p-4 h-16 border-b-[1px] border-neutral-700">
         <Icon
@@ -49,25 +49,23 @@ const Drawer = ({ isMenuOpen, setIsMenuOpen }: DrawerProps) => {
         />
       </div>
 
-      <div>
-        <ul className="flex flex-col gap-8 px-4">
-          {menuItems.map((item) => (
-            <li key={item.name}>
-              <Link
-                href={item.route}
-                onClick={handleClick}
-                className={`flex items-center gap-3 text-stone-300 ${
-                  item.name === activeMenuItemHighlight
-                    ? "font-bold text-white"
-                    : null
-                }`}>
-                <Icon icon={item.icon} height={40} />
-                {item.name}
-              </Link>
-            </li>
-          ))}
-        </ul>
-      </div>
+      <ul className="flex flex-col gap-8 px-4">
+        {menuItems.map((item) => (
+          <li key={item.name}>
+            <Link
+              href={item.route}
+              onClick={handleClick}
+              className={`flex items-center gap-3 text-stone-300 ${
+                item.name === activeMenuItemHighlight
+                  ? "font-bold text-white"
+                  : null
+              }`}>
+              <Icon icon={item.icon} height={40} />
+              {item.name}
+            </Link>
+          </li>
+        ))}
+      </ul>
     </section>
   )
 }

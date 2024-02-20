@@ -14,7 +14,7 @@ type ButtonProp = {
 function Button({ item }: ButtonProp) {
   return (
     <Link
-      className="flex justify-start items-center bg-red-700 text-white rounded-lg gap-4 no-underline px-6 py-4 w-full h-16 shadow-md"
+      className="flex justify-start items-center bg-red-600 hover:bg-red-800  text-white rounded-lg gap-4 no-underline px-6 py-4 w-full h-16 shadow-md"
       href={item.route}>
       <Icon icon={item.icon} width={60} />
       {item.name}

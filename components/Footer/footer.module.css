@@ -1,0 +1,42 @@
+.footer {
+  position: relative;
+}
+
+.footer-container {
+  position: fixed;
+  bottom: 0;
+  z-index: 2;
+
+  display: flex;
+  justify-content: space-between;
+  /* margin-inline: auto; */
+  padding-inline: 1em;
+  padding-block: 0.5em;
+  width: 100%;
+  max-width: var(--screen-width-max);
+
+  background-color: var(--color-red-40);
+  color: var(--color-white-100);
+  line-height: 1.1;
+}
+
+.footer a {
+  color: whitesmoke;
+}
+
+.footer .author {
+  font-size: 0.75rem;
+  font-weight: bold;
+}
+
+.footer__list {
+  display: flex;
+  gap: 1.5em;
+  list-style: none;
+  padding: 0;
+}
+
+.footer__link {
+  text-decoration: none;
+  font-size: 0.75rem;
+}
