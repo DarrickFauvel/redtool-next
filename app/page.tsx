@@ -21,7 +21,7 @@ export default function Home() {
           ))}
         </ul>
 
-        <div className="grid gap-1 mt-16 max-w-40 text-center">
+        <div className="grid gap-1 mt-16 max-w-52 text-center">
           <Qrcode />
         </div>
       </section>

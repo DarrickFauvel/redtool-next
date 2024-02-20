@@ -10,7 +10,7 @@
   --color-red-40: hsl(0, 100%, 40%);
   --color-red-33: hsl(0, 100%, 33%);
   --color-red-24: hsl(0, 100%, 24%);
-  /* --color-gray-20: hsl(0, 0%, 20%); */
+  --color-gray-20: #333333;
   --color-gray-20-rgb: 51, 51, 51;
   --color-gray-136: hsl(0, 0%, 53%);
   --color-white-100: hsl(0, 0%, 100%);
