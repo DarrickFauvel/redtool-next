@@ -19,3 +19,21 @@ export const menuItems = [
     icon: "material-symbols-light:info-outline",
   },
 ]
+
+export const authorData = {
+  name: "Darrick Fauvel",
+  socials: [
+    {
+      name: "Website",
+      url: "http://darrickdevelops.com",
+    },
+    {
+      name: "LinkedIn",
+      url: "https://www.linkedin.com/in/darrickfauvel/",
+    },
+    {
+      name: "GitHub",
+      url: "https://github.com/DarrickFauvel",
+    },
+  ],
+}
