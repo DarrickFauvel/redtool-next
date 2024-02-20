@@ -22,7 +22,7 @@ function Nav() {
           icon="material-symbols-light:phone-iphone-outline"
           height={40}
         />
-        <span>{appTitle}</span>
+        <span className="tracking-wider">{appTitle}</span>
       </Link>
 
       <Icon
