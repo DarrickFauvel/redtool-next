@@ -3,7 +3,7 @@ import { menuItems } from "@/config"
 import Image from "next/image"
 import Link from "next/link"
 import Button from "./components/button"
-import Qrcode from "./components/qrcode"
+import Qrcode from "./components/Qrcode"
 
 export default function Home() {
   const menuItemsWithoutAbout = menuItems.filter(
