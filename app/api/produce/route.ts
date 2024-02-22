@@ -1,44 +1,4 @@
-export const appTitle = "redTool"
-
-export const activeMenuItemHighlight = null
-
-export const menuItems = [
-  {
-    name: "Barcode Generator",
-    route: "generator",
-    icon: "material-symbols-light:barcode-scanner",
-  },
-  {
-    name: "Produce Codes",
-    route: "produce",
-    icon: "healthicons:fruits-outline",
-  },
-  {
-    name: "About redTool",
-    route: "about",
-    icon: "material-symbols-light:info-outline",
-  },
-]
-
-export const authorData = {
-  name: "Darrick Fauvel",
-  socials: [
-    {
-      name: "Website",
-      url: "http://darrickdevelops.com",
-    },
-    {
-      name: "LinkedIn",
-      url: "https://www.linkedin.com/in/darrickfauvel/",
-    },
-    {
-      name: "GitHub",
-      url: "https://github.com/DarrickFauvel",
-    },
-  ],
-}
-
-export const produceData = [
+const produceData = [
   {
     name: "Banana",
     upc: "208011000006",
@@ -194,3 +154,7 @@ export const produceData = [
       "https://target.scene7.com/is/image/Target/GUEST_fb9bf4e6-b4a8-4bdd-b835-c98753c422be?wid=325&hei=325&qlt=80&fmt=pjpeg",
   },
 ]
+
+export async function GET() {
+  return Response.json({ produceData })
+}

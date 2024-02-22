@@ -65,9 +65,9 @@ img {
   display: none;
 }
 
-.modal .backdrop {
+/* .modal .backdrop {
   position: fixed;
-  background-color: rgba(61, 61, 61, 0.9);
+  background-color: #3d3d3de6;
   top: 0;
   bottom: 0;
   left: 0;
@@ -76,7 +76,7 @@ img {
   justify-content: center;
   align-items: center;
   z-index: 3;
-}
+} */
 
 .modalCard {
   animation: slidedown 200ms;
