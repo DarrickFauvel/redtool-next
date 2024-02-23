@@ -11,7 +11,7 @@ export default function Home() {
   )
 
   return (
-    <main>
+    <>
       <section className="flex flex-col justify-center items-center mt-4">
         <ul className="flex flex-col gap-8 max-w-max">
           {menuItemsWithoutAbout.map((item) => (
@@ -25,6 +25,6 @@ export default function Home() {
           <Qrcode />
         </div>
       </section>
-    </main>
+    </>
   )
 }

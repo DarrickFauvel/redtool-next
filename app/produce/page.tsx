@@ -27,7 +27,7 @@ const ProducePage = () => {
   }
 
   return (
-    <main>
+    <>
       <BackLink />
       <PageTitle title="Produce Codes" />
 
@@ -62,7 +62,7 @@ const ProducePage = () => {
           </div>
         </section>
       )}
-    </main>
+    </>
   )
 }
 export default ProducePage
