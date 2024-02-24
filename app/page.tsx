@@ -1,7 +1,4 @@
-import Icon from "@/components/Icon"
 import { menuItems } from "@/config"
-import Image from "next/image"
-import Link from "next/link"
 import Button from "./components/button"
 import Qrcode from "./components/Qrcode"
 
