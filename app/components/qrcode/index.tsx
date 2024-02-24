@@ -1,6 +1,5 @@
-import qrcode from "@/assets/images/redtool-qrcode.svg"
-
 import Image from "next/image"
+import qrcode from "@/assets/images/redtool-qrcode.svg"
 
 const Qrcode = () => (
   <>
