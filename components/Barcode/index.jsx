@@ -8,9 +8,10 @@ const Barcode = (props) => {
 
   return (
     <ReactBarcode
-      value={props.barcodeValue || $generatorFormData.barcodeValue}
+      // value={props.barcodeValue || $generatorFormData.barcodeValue}
+      value={props.barcodeValue}
       height={50}
-      text={props.dpci}
+      text={props.dpci || undefined}
       fontSize={15}
     />
   )

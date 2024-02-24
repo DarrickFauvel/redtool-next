@@ -44,7 +44,7 @@ img {
   padding-inline: 1em;
 } */
 
-.btn {
+/* .btn {
   padding-inline: 0.75em;
   padding-block: 1em;
   letter-spacing: 0.07em;
@@ -54,11 +54,11 @@ img {
   background-color: var(--color-red-40);
   color: var(--color-white-100);
   font-weight: bold;
-}
+} */
 
-.btn:hover {
+/* .btn:hover {
   background-color: var(--color-red-33);
-}
+} */
 
 /* Modal */
 .hide {
