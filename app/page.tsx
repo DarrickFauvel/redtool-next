@@ -1,6 +1,6 @@
 import { menuItems } from "@/config"
-import Button from "./components/button"
-import Qrcode from "./components/Qrcode"
+import Button from "../components/Button"
+import Qrcode from "../components/Qrcode"
 
 export default function Home() {
   const menuItemsWithoutAbout = menuItems.filter(
