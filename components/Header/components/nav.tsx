@@ -13,7 +13,7 @@ function Nav() {
   }
 
   return (
-    <nav className="relative flex justify-between items-center py-[.65em]">
+    <nav className="flex justify-between items-center py-[.65em]">
       <Link
         className="flex items-center gap-2 text-[1.2rem] font-bold text-white no-underline m-0 p-0 leading-none"
         href="/">
@@ -31,7 +31,9 @@ function Nav() {
         onClick={handleClick}
         height={40}
       />
-      <Drawer isMenuOpen={isMenuOpen} setIsMenuOpen={setIsMenuOpen} />
+      {isMenuOpen && (
+        <Drawer isMenuOpen={isMenuOpen} setIsMenuOpen={setIsMenuOpen} />
+      )}
     </nav>
   )
 }
