@@ -4,7 +4,7 @@ import PageTitle from "@/components/PageTitle"
 import Card from "./components/Card"
 import { produceData } from "@/config"
 import Image from "next/image"
-import { useState } from "react"
+import React, { useState } from "react"
 
 type Item = {
   name: string
@@ -14,16 +14,19 @@ type Item = {
 }
 
 const ProducePage = () => {
-  const [selectedProduceItem, setSelectedProduceItem] = useState(null)
+  const [selectedProduceItem, setSelectedProduceItem] = useState({})
   const [isModelShown, setIsModelShown] = useState(false)
 
-  const handleClick = (e) => {
-    const itemUpc = e.target.closest("li").dataset.itemUpc
-    const newItem = produceData.find((item) => item.upc === itemUpc)
-    // selectedProduceItem.set(newItem)
-    setSelectedProduceItem(newItem)
-    // isModalShown.set(!$isModalShown)
-    setIsModelShown((prev) => !prev)
+  const handleClick = (e: React.MouseEvent<HTMLButtonElement>) => {
+    if (e.target) {
+      const itemUpc = (e.target as HTMLButtonElement).closest("button")?.dataset
+        .itemUpc
+      const newItem = produceData.find((item) => item.upc === itemUpc)
+      if (newItem) {
+        setSelectedProduceItem(newItem)
+        setIsModelShown((prev) => !prev)
+      }
+    }
   }
 
   return (
@@ -39,14 +42,19 @@ const ProducePage = () => {
             return 0
           })
           .map((item) => (
-            <li
-              className="flex items-center gap-1 border border-gray-300 rounded-lg py-1 pr-4 pl-3 no-underline text-black overflow-hidden cursor-pointer hover:border-gray-400"
-              key={item.name}
-              onClick={handleClick}
-              data-item-upc={item.upc}>
-              {/* <ImageWithFixedSize src={item.imgUrl} width={40} height={40} /> */}
-              <Image src={item.imgUrl} width={40} height={40} alt={item.name} />
-              {item.name}
+            <li key={item.name}>
+              <button
+                className="flex items-center gap-1 border border-gray-300 rounded-lg py-1 pr-4 pl-3 no-underline text-black overflow-hidden cursor-pointer hover:border-gray-400"
+                onClick={handleClick}
+                data-item-upc={item.upc}>
+                <Image
+                  src={item.imgUrl}
+                  width={40}
+                  height={40}
+                  alt={item.name}
+                />
+                {item.name}
+              </button>
             </li>
           ))}
       </ul>
