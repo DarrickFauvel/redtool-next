@@ -1,7 +1,20 @@
 import Image from "next/image"
 import Barcode from "@/components/Barcode"
+import React from "react"
 
-const Card = ({ item }) => {
+interface Item {
+  name: string
+  upc: string
+  dpci: string
+  imgUrl: string
+}
+
+interface Props {
+  selectedProduceItem: Item
+}
+
+const Card: React.FC<Props> = ({ selectedProduceItem }) => {
+  const item = selectedProduceItem
   return (
     <article
       className="bg-white rounded-lg pt-2 pb-0 px-3"
