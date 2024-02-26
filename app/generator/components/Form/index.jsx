@@ -1,19 +1,6 @@
 "use client"
-
-// import { useStore } from "@nanostores/react"
-// import { generatorFormData } from "../../../../stores/barcodeGeneratorStore"
-
-// import classes from "./form.module.css"
-
-const Form = ({ inputValue, setInputValue, barcodeValue, setBarcodeValue }) => {
-  // const $generatorFormData = useStore(generatorFormData)
-
+const Form = ({ inputValue, setInputValue, setBarcodeValue }) => {
   const handleChange = (e) => {
-    // const { name, value } = e.target
-    // generatorFormData.set({
-    //   ...$generatorFormData,
-    //   [name]: value?.toUpperCase(),
-    // })
     setInputValue(e.target.value)
   }
 
@@ -22,10 +9,6 @@ const Form = ({ inputValue, setInputValue, barcodeValue, setBarcodeValue }) => {
     if (!inputValue) {
       return
     }
-    // generatorFormData.set({
-    //   ...$generatorFormData,
-    //   barcodeValue: $generatorFormData.inputValue,
-    // })
     setBarcodeValue(inputValue)
   }
 

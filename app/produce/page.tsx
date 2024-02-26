@@ -1,10 +1,10 @@
 "use client"
+import React, { useState } from "react"
+import { produceData } from "@/config"
 import BackLink from "@/components/BackLink"
 import PageTitle from "@/components/PageTitle"
 import Card from "./components/Card"
-import { produceData } from "@/config"
 import Image from "next/image"
-import React, { useState } from "react"
 
 type Item = {
   name: string
@@ -14,7 +14,12 @@ type Item = {
 }
 
 const ProducePage = () => {
-  const [selectedProduceItem, setSelectedProduceItem] = useState({})
+  const [selectedProduceItem, setSelectedProduceItem] = useState({
+    name: "",
+    upc: "",
+    dpci: "",
+    imgUrl: "",
+  })
   const [isModelShown, setIsModelShown] = useState(false)
 
   const handleClick = (e: React.MouseEvent<HTMLButtonElement>) => {
@@ -65,7 +70,7 @@ const ProducePage = () => {
             className="fixed top-0 bottom-0 left-0 right-0 bg-gray-800 bg-opacity-80 flex justify-center items-center z-30"
             onClick={() => setIsModelShown((prev) => !prev)}>
             <div className="modalCard">
-              <Card item={selectedProduceItem} />
+              <Card selectedProduceItem={selectedProduceItem} />
             </div>
           </div>
         </section>
