@@ -2,9 +2,9 @@
 import React, { useState } from "react"
 import { produceData } from "@/config"
 import BackLink from "@/components/BackLink"
-import PageTitle from "@/components/PageTitle"
 import Card from "./components/Card"
 import Image from "next/image"
+import PageTitle from "@/components/PageTitle"
 
 type Item = {
   name: string

@@ -5,17 +5,17 @@ export const activeMenuItemHighlight = null
 export const menuItems = [
   {
     name: "Barcode Generator",
-    route: "generator",
+    route: "/generator",
     icon: "material-symbols-light:barcode-scanner",
   },
   {
     name: "Produce Codes",
-    route: "produce",
+    route: "/produce",
     icon: "healthicons:fruits-outline",
   },
   {
     name: "About redTool",
-    route: "about",
+    route: "/about",
     icon: "material-symbols-light:info-outline",
   },
 ]

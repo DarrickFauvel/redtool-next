@@ -1,9 +1,9 @@
 "use client"
 import { useState } from "react"
 import BackLink from "@/components/BackLink"
-import PageTitle from "@/components/PageTitle"
 import Form from "./components/Form"
 import Barcode from "@/components/Barcode"
+import PageTitle from "@/components/PageTitle"
 
 const GeneratorPage = () => {
   const [inputValue, setInputValue] = useState("")
@@ -20,7 +20,7 @@ const GeneratorPage = () => {
         setBarcodeValue={setBarcodeValue}
       />
 
-      <section className=" flex justify-center mt-16 text-center">
+      <section className=" flex justify-center mt-8 text-center">
         {barcodeValue && <Barcode barcodeValue={barcodeValue} />}
       </section>
     </>
