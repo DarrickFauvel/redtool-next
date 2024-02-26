@@ -14,7 +14,12 @@ type Item = {
 }
 
 const ProducePage = () => {
-  const [selectedProduceItem, setSelectedProduceItem] = useState({})
+  const [selectedProduceItem, setSelectedProduceItem] = useState({
+    name: "",
+    upc: "",
+    dpci: "",
+    imgUrl: "",
+  })
   const [isModelShown, setIsModelShown] = useState(false)
 
   const handleClick = (e: React.MouseEvent<HTMLButtonElement>) => {
