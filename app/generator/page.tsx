@@ -17,14 +17,10 @@ const GeneratorPage = () => {
       <Form
         inputValue={inputValue}
         setInputValue={setInputValue}
-        barcodeValue={barcodeValue}
         setBarcodeValue={setBarcodeValue}
       />
 
       <section className=" flex justify-center mt-16 text-center">
-        {/* {$generatorFormData.barcodeValue && (
-          <Barcode value={$generatorFormData.barcodeValue} />
-        )} */}
         {barcodeValue && <Barcode barcodeValue={barcodeValue} />}
       </section>
     </>
