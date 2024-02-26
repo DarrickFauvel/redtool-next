@@ -1,10 +1,10 @@
 "use client"
 import React, { useState } from "react"
 import { produceData } from "@/config"
-import BackLink from "@/components/BackLink"
 import Card from "./components/Card"
 import Image from "next/image"
 import PageTitle from "@/components/PageTitle"
+import BackLink from "@/components/BackLink"
 
 type Item = {
   name: string

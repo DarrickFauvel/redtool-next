@@ -1,9 +1,9 @@
 "use client"
 import { useState } from "react"
-import BackLink from "@/components/BackLink"
 import Form from "./components/Form"
 import Barcode from "@/components/Barcode"
 import PageTitle from "@/components/PageTitle"
+import BackLink from "@/components/BackLink"
 
 const GeneratorPage = () => {
   const [inputValue, setInputValue] = useState("")
