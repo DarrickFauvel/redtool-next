@@ -4,7 +4,7 @@ import Qrcode from "../components/Qrcode"
 
 export default function Home() {
   const menuItemsWithoutAbout = menuItems.filter(
-    (item) => item.route !== "about"
+    (item) => item.route !== "/about"
   )
 
   return (
