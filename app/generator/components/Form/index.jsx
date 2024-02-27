@@ -1,7 +1,7 @@
 "use client"
 const Form = ({ inputValue, setInputValue, setBarcodeValue }) => {
   const handleChange = (e) => {
-    setInputValue(e.target.value)
+    setInputValue(e.target.value.toUpperCase())
   }
 
   const handleSubmit = (e) => {
