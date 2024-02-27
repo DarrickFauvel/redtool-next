@@ -1,10 +1,18 @@
 "use client"
-const Form = ({ inputValue, setInputValue, setBarcodeValue }) => {
-  const handleChange = (e) => {
+import React, { ChangeEvent, FormEvent } from "react"
+
+type FormProps = {
+  inputValue: string
+  setInputValue: (arg0: string) => string
+  setBarcodeValue: (arg0: string) => string
+}
+
+const Form = ({ inputValue, setInputValue, setBarcodeValue }: FormProps) => {
+  const handleChange = (e: ChangeEvent<HTMLInputElement>) => {
     setInputValue(e.target.value.toUpperCase())
   }
 
-  const handleSubmit = (e) => {
+  const handleSubmit = (e: FormEvent<HTMLFormElement>) => {
     e.preventDefault()
     if (!inputValue) {
       return
