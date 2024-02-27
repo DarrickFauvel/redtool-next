@@ -194,3 +194,21 @@ export const produceData = [
       "https://target.scene7.com/is/image/Target/GUEST_fb9bf4e6-b4a8-4bdd-b835-c98753c422be?wid=325&hei=325&qlt=80&fmt=pjpeg",
   },
 ]
+
+export const techStack = [
+  {
+    name: "NextJS",
+    description: "Fullstack React JS framework",
+    url: "https://nextjs.org/",
+  },
+  {
+    name: "Tailwind CSS",
+    description: "Utility-first CSS framework",
+    url: "https://tailwindcss.com/",
+  },
+  {
+    name: "TypeScript",
+    description: "Strong data typing for JavaScript",
+    url: "https://www.typescriptlang.org/",
+  },
+]
