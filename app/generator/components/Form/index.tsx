@@ -3,8 +3,8 @@ import React, { ChangeEvent, FormEvent } from "react"
 
 type FormProps = {
   inputValue: string
-  setInputValue: (arg0: string) => string
-  setBarcodeValue: (arg0: string) => string
+  setInputValue: (arg0: string) => void
+  setBarcodeValue: (arg0: string) => void
 }
 
 const Form = ({ inputValue, setInputValue, setBarcodeValue }: FormProps) => {
