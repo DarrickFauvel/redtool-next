@@ -1,6 +1,6 @@
 "use client"
 import React, { useState } from "react"
-import { produceData } from "@/config"
+import { produceData } from "@/lib/config"
 import Card from "./components/Card"
 import Image from "next/image"
 import PageTitle from "@/components/PageTitle"

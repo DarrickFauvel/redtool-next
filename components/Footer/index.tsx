@@ -1,4 +1,4 @@
-import { authorData } from "@/config"
+import { authorData } from "@/lib/config"
 import Container from "../Container"
 
 const Footer = () => {

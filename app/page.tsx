@@ -1,4 +1,4 @@
-import { menuItems } from "@/config"
+import { menuItems } from "@/lib/config"
 import Button from "../components/Button"
 import Qrcode from "../components/Qrcode"
 

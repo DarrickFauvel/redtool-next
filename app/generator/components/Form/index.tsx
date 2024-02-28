@@ -1,5 +1,6 @@
 "use client"
-import React, { ChangeEvent, FormEvent } from "react"
+import { roboto_mono } from "@/lib/fonts"
+import React, { type ChangeEvent, type FormEvent } from "react"
 
 type FormProps = {
   inputValue: string
@@ -24,7 +25,7 @@ const Form = ({ inputValue, setInputValue, setBarcodeValue }: FormProps) => {
     <form className="flex flex-col gap-4" id="form" onSubmit={handleSubmit}>
       <div className="flex flex-col gap-1">
         <input
-          className="w-full p-4 border-[1px] border-gray-600 rounded-lg"
+          className="w-full p-4 border-[1px] border-gray-600 rounded-lg tracking-widest"
           type="search"
           id="inputValue"
           name="textInput"
@@ -34,10 +35,10 @@ const Form = ({ inputValue, setInputValue, setBarcodeValue }: FormProps) => {
           autoComplete="off"
         />
         <label
-          className="flex justify-center gap-1 text-gray-500 text-sm"
+          className="flex justify-center items-center gap-1 text-gray-500 text-sm"
           htmlFor="textInput">
-          <span className="inline-block pb-1 text-xs">example:</span> 01A035M02,
-          99B106A05, etc.
+          <span className="text-xs">example:</span>{" "}
+          <span>01A035M02, 99B106A05, SHPQB01, etc.</span>
         </label>
       </div>
       <button
