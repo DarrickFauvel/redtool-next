@@ -9,6 +9,20 @@ const GeneratorPage = () => {
   const [inputValue, setInputValue] = useState("")
   const [barcodeValue, setBarcodeValue] = useState("")
 
+  const displayBarcodeSegments = () => {
+    let barcodeSegments = []
+    barcodeSegments[0] = barcodeValue.slice(0, 3)
+    barcodeSegments[1] = barcodeValue.slice(3, 6)
+    barcodeSegments[2] = barcodeValue.slice(6)
+    return (
+      <>
+        <span>{barcodeSegments[0]}</span>
+        <span>{barcodeSegments[1]}</span>
+        <span>{barcodeSegments[2]}</span>
+      </>
+    )
+  }
+
   return (
     <>
       <BackLink />
