@@ -1,5 +1,6 @@
 "use client"
 import { useState } from "react"
+import { roboto_mono } from "@/lib/fonts"
 import Barcode from "@/components/Barcode"
 import PageTitle from "@/components/PageTitle"
 import BackLink from "@/components/BackLink"
@@ -36,7 +37,8 @@ const GeneratorPage = () => {
       {barcodeValue && (
         <section className="relative flex flex-col w-min mx-auto items-center mt-8 px-4 py-2 border border-gray-400 rounded-xl">
           <Barcode barcodeValue={barcodeValue} />
-          <p className="z-10 flex gap-2 -mt-[8px] tracking-wider">
+          <p
+            className={`z-10 flex gap-2 -mt-[8px] tracking-wider ${roboto_mono.className}`}>
             {displayBarcodeSegments()}
           </p>
         </section>

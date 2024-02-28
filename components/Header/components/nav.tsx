@@ -2,7 +2,7 @@
 import Link from "next/link"
 import Icon from "@/components/Icon"
 import { useState } from "react"
-import { appTitle } from "@/config"
+import { appTitle } from "@/lib/config"
 import Drawer from "./drawer"
 
 function Nav() {

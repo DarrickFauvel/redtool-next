@@ -1,6 +1,6 @@
 import BackLink from "@/components/BackLink"
 import PageTitle from "@/components/PageTitle"
-import { appTitle, authorData, techStack } from "@/config"
+import { appTitle, authorData, techStack } from "@/lib/config"
 
 const AboutPage = () => {
   return (

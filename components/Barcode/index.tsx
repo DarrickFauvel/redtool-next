@@ -1,3 +1,4 @@
+import { roboto_mono } from "@/lib/fonts"
 import ReactBarcode from "react-barcode"
 
 type BarcodeProps = {
@@ -11,7 +12,6 @@ const Barcode = ({ barcodeValue, dpci }: BarcodeProps) => {
       <ReactBarcode
         value={barcodeValue}
         height={50}
-        // text={dpci}
         fontSize={15}
         displayValue={false}
       />

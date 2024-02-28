@@ -3,7 +3,7 @@ import React, { useRef } from "react"
 import Link from "next/link"
 import useOnClickOutside from "@/hooks/useOnClickOutside"
 import Icon from "@/components/Icon"
-import { activeMenuItemHighlight, menuItems } from "@/config"
+import { activeMenuItemHighlight, menuItems } from "@/lib/config"
 import { usePathname } from "next/navigation"
 
 type DrawerProps = {

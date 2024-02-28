@@ -20,7 +20,7 @@ const Card: React.FC<Props> = ({ selectedProduceItem }) => {
       className="bg-white rounded-lg pt-2 pb-0 px-3"
       key={item.name}
       id={item.upc}>
-      <h3 className="capitalize">{item.name}</h3>
+      <h3 className="font-bold capitalize">{item.name}</h3>
 
       <div className="flex items-center leading-none p-0">
         <div className="w-10 h-10">
