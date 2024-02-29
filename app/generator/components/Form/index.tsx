@@ -1,6 +1,7 @@
 "use client"
-import { roboto_mono } from "@/lib/fonts"
 import React, { type ChangeEvent, type FormEvent } from "react"
+import { Button } from "@/components/ui/button"
+import { Input } from "@/components/ui/input"
 
 type FormProps = {
   inputValue: string
@@ -24,8 +25,8 @@ const Form = ({ inputValue, setInputValue, setBarcodeValue }: FormProps) => {
   return (
     <form className="flex flex-col gap-4" id="form" onSubmit={handleSubmit}>
       <div className="flex flex-col gap-1">
-        <input
-          className="w-full p-4 border-[1px] border-gray-600 rounded-lg tracking-widest"
+        <Input
+          className="border-gray-500"
           type="search"
           id="inputValue"
           name="textInput"
@@ -34,18 +35,14 @@ const Form = ({ inputValue, setInputValue, setBarcodeValue }: FormProps) => {
           placeholder="Enter location identifier..."
           autoComplete="off"
         />
-        <label
-          className="flex justify-center items-center gap-1 text-gray-500 text-sm"
-          htmlFor="textInput">
-          <span className="text-xs">example:</span>{" "}
-          <span>01A035M02, 99B106A05, SHPQB01, etc.</span>
-        </label>
+        <p className="flex justify-center items-center gap-1 text-gray-400 text-xs font-normal">
+          example: 01A035M02, 99B106A05, SHPQB01, etc.
+        </p>
       </div>
-      <button
-        className="px-3 py-4 tracking-wider rounded-lg border-none cursor-pointer bg-red-600 text-white font-bold hover:bg-red-800"
-        type="submit">
+
+      <Button className="bg-red-600 hover:bg-red-600/90 tracking-wider mt-4">
         GENERATE
-      </button>
+      </Button>
     </form>
   )
 }
