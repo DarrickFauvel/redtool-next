@@ -70,7 +70,7 @@ const config = {
         "slide-up": {
           from: {
             opacity: "0",
-            transform: "translateY(10px) scale(0.8)",
+            transform: "translateY(20px) scale(0.8)",
           },
           to: {
             opacity: "1",
@@ -81,7 +81,7 @@ const config = {
       animation: {
         "accordion-down": "accordion-down 0.2s ease-out",
         "accordion-up": "accordion-up 0.2s ease-out",
-        "slide-up": "slide-up 0.2s ease-in",
+        "slide-up": "slide-up 0.15s",
       },
     },
   },
