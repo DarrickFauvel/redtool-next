@@ -20,9 +20,9 @@ export default function RootLayout({
       <body className="relative z-10">
         <div className="mx-auto bg-white">
           <Header />
-          {/* <main className="pt-8 pb-12">
+          <main className="pt-8 pb-12">
             <Container>{children}</Container>
-          </main> */}
+          </main>
           <Footer />
         </div>
       </body>
