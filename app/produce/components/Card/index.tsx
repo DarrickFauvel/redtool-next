@@ -1,6 +1,9 @@
-import Image from "next/image"
-import Barcode from "@/components/Barcode"
 import React from "react"
+import Image from "next/image"
+import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card"
+
+import Barcode from "@/components/Barcode"
+import Icon from "@/components/Icon"
 
 interface Item {
   name: string
@@ -13,26 +16,30 @@ interface Props {
   selectedProduceItem: Item
 }
 
-const Card: React.FC<Props> = ({ selectedProduceItem }) => {
+const CardComponent: React.FC<Props> = ({ selectedProduceItem }) => {
   const item = selectedProduceItem
   return (
-    <article
-      className="bg-white rounded-lg pt-2 pb-0 px-3"
-      key={item.name}
-      id={item.upc}>
-      <h3 className="font-bold capitalize">{item.name}</h3>
-
-      <div className="flex items-center leading-none p-0">
-        <div className="w-10 h-10">
-          <Image src={item.imgUrl} width={40} height={40} alt={item.name} />
-        </div>
-
-        <section>
+    <>
+      <Card className="relative" key={item.name} id={item.upc}>
+        <CardHeader className="px-4 pt-3 pb-0">
+          <CardTitle className="text-xl font-semibold">{item.name}</CardTitle>
+        </CardHeader>
+        <CardContent className="flex items-start px-4 pt-2 pb-3">
+          <Image
+            className="mt-2"
+            src={item.imgUrl}
+            width={50}
+            height={50}
+            alt={item.name}
+          />
           {item.upc && <Barcode barcodeValue={item.upc} dpci={item.dpci} />}
-        </section>
-      </div>
-    </article>
+        </CardContent>
+        <div className="absolute w-8 h-8 -top-3 -right-3 flex justify-center items-center bg-red-500 hover:bg-red-500/95 rounded-full leading-none shadow-md cursor-pointer">
+          <Icon className="text-white" icon="ep:close-bold" />
+        </div>
+      </Card>
+    </>
   )
 }
 
-export default Card
+export default CardComponent

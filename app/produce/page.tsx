@@ -1,7 +1,7 @@
 "use client"
 import React, { useState } from "react"
 import { produceData } from "@/lib/config"
-import Card from "./components/Card"
+import CardComponent from "./components/Card"
 import Image from "next/image"
 import PageTitle from "@/components/PageTitle"
 import BackLink from "@/components/BackLink"
@@ -69,8 +69,8 @@ const ProducePage = () => {
           <div
             className="fixed top-0 bottom-0 left-0 right-0 bg-gray-800 bg-opacity-80 flex justify-center items-center z-30"
             onClick={() => setIsModelShown((prev) => !prev)}>
-            <div className="modalCard">
-              <Card selectedProduceItem={selectedProduceItem} />
+            <div className="modalCard animate-slide-up">
+              <CardComponent selectedProduceItem={selectedProduceItem} />
             </div>
           </div>
         </section>
