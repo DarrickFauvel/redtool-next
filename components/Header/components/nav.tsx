@@ -31,9 +31,7 @@ function Nav() {
         onClick={handleClick}
         height={40}
       />
-      {isMenuOpen && (
-        <Drawer isMenuOpen={isMenuOpen} setIsMenuOpen={setIsMenuOpen} />
-      )}
+      {<Drawer isMenuOpen={isMenuOpen} setIsMenuOpen={setIsMenuOpen} />}
     </nav>
   )
 }

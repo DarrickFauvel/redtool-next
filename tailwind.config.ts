@@ -1,3 +1,4 @@
+import { transform } from "next/dist/build/swc"
 import type { Config } from "tailwindcss"
 
 const config = {
@@ -81,7 +82,6 @@ const config = {
       animation: {
         "accordion-down": "accordion-down 0.2s ease-out",
         "accordion-up": "accordion-up 0.2s ease-out",
-        "slide-up": "slide-up 0.15s",
       },
     },
   },

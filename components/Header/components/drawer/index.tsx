@@ -25,7 +25,9 @@ const Drawer = ({ isMenuOpen, setIsMenuOpen }: DrawerProps) => {
   return (
     <section
       ref={drawerRef}
-      className={`flex flex-col gap-6 absolute top-0 h-screen w-[230px] right-0 bg-zinc-800 text-white z-50 duration-200`}>
+      className={`flex flex-col gap-6 absolute top-0 h-screen w-[230px] right-0 bg-zinc-800 text-white z-50 transition duration-150 ${
+        isMenuOpen ? "translate-x-0" : "translate-x-full"
+      }`}>
       <div className="flex justify-end items-center p-4 h-16 border-b-[1px] border-neutral-700">
         <Icon
           className="w-auto cursor-pointer"
