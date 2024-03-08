@@ -1,10 +1,10 @@
 "use client"
 import React, { useRef } from "react"
 import Link from "next/link"
+import { usePathname } from "next/navigation"
 import useOnClickOutside from "@/hooks/useOnClickOutside"
 import Icon from "@/components/Icon"
-import { activeMenuItemHighlight, menuItems } from "@/lib/config"
-import { usePathname } from "next/navigation"
+import { menuItems } from "@/lib/config"
 
 type DrawerProps = {
   isMenuOpen: boolean
@@ -25,8 +25,8 @@ const Drawer = ({ isMenuOpen, setIsMenuOpen }: DrawerProps) => {
   return (
     <section
       ref={drawerRef}
-      className={`flex flex-col gap-6 absolute top-0 h-screen w-[230px] right-0 bg-zinc-800 text-white z-50 transition duration-150 ${
-        isMenuOpen ? "translate-x-0" : "translate-x-full"
+      className={`flex flex-col gap-6 absolute top-0 h-screen w-[230px] right-0 bg-zinc-800 text-white z-50 transition duration-300 ${
+        isMenuOpen ? "opacity-100 translate-x-0" : "opacity-0 translate-x-full"
       }`}>
       <div className="flex justify-end items-center p-4 h-16 border-b-[1px] border-neutral-700">
         <Icon
