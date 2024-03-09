@@ -67,7 +67,7 @@ const ProducePage = () => {
       {isModelShown && (
         <section>
           <div
-            className="fixed top-0 bottom-0 left-0 right-0 bg-gray-800 bg-opacity-80 flex justify-center items-center z-30"
+            className="fixed top-0 bottom-0 left-0 right-0 bg-gray-800 bg-opacity-80 backdrop-blur-[2px] flex justify-center items-center z-30"
             onClick={() => setIsModelShown((prev) => !prev)}>
             <div className="modalCard animate-slide-up">
               <CardComponent selectedProduceItem={selectedProduceItem} />
