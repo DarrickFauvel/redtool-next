@@ -4,6 +4,7 @@ import Header from "@/components/Header"
 import Footer from "@/components/Footer"
 import Container from "@/components/Container"
 import { roboto_flex } from "@/lib/fonts"
+import { ThemeProvider } from "@/components/theme-provider"
 
 export const metadata: Metadata = {
   title: "redTool",
@@ -16,15 +17,21 @@ export default function RootLayout({
   children: React.ReactNode
 }>) {
   return (
-    <html lang="en" className={roboto_flex.className}>
+    <html lang="en" className={roboto_flex.className} suppressHydrationWarning>
       <body className="relative z-10">
-        <div className="mx-auto bg-white">
-          <Header />
-          <main className="pt-8 pb-12">
-            <Container>{children}</Container>
-          </main>
-          <Footer />
-        </div>
+        <ThemeProvider
+          attribute="class"
+          defaultTheme="system"
+          enableSystem
+          disableTransitionOnChange>
+          <div className="mx-auto">
+            <Header />
+            <main className="pt-8 pb-12">
+              <Container>{children}</Container>
+            </main>
+            <Footer />
+          </div>
+        </ThemeProvider>
       </body>
     </html>
   )
