@@ -211,4 +211,9 @@ export const techStack = [
     description: "Strong data typing for JavaScript",
     url: "https://www.typescriptlang.org/",
   },
+  {
+    name: "shadcn/ui",
+    description: "Accessible component library",
+    url: "https://ui.shadcn.com/",
+  },
 ]
