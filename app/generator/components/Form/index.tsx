@@ -40,7 +40,7 @@ const Form = ({ inputValue, setInputValue, setBarcodeValue }: FormProps) => {
         </p>
       </div>
 
-      <Button className="bg-red-600 hover:bg-red-600/90 tracking-wider mt-4">
+      <Button className="bg-primary text-primary-foreground hover:bg-primary/90 tracking-wider mt-4">
         GENERATE
       </Button>
     </form>

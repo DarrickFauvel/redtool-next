@@ -17,8 +17,8 @@ const Header = () => {
 
   return (
     <header className="relative top-0 h-16">
-      <Container className="fixed top-0 left-0 right-0 z-20 w-full max-w-[769px] bg-red-600 h-16 text-white">
-        <div className="z-20 w-full bg-red-600 text-white">
+      <Container className="fixed top-0 left-0 right-0 z-20 w-full max-w-[769px] bg-primary h-16">
+        <div className="z-20 w-full">
           <Nav />
         </div>
       </Container>

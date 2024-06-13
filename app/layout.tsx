@@ -17,13 +17,12 @@ export default function RootLayout({
   children: React.ReactNode
 }>) {
   return (
-    <html lang="en" className={roboto_flex.className} suppressHydrationWarning>
-      <body className="relative z-10">
-        <ThemeProvider
-          attribute="class"
-          defaultTheme="system"
-          enableSystem
-          disableTransitionOnChange>
+    <html
+      lang="en"
+      className={`${roboto_flex.className}`}
+      suppressHydrationWarning>
+      <body className="relative z-10 transition-colors duration-500">
+        <ThemeProvider attribute="class" defaultTheme="system" enableSystem>
           <div className="mx-auto">
             <Header />
             <main className="pt-8 pb-12">

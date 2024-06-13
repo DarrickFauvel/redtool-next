@@ -20,7 +20,10 @@ const CardComponent: React.FC<Props> = ({ selectedProduceItem }) => {
   const item = selectedProduceItem
   return (
     <>
-      <Card className="relative" key={item.name} id={item.upc}>
+      <Card
+        className="relative bg-white text-black/80"
+        key={item.name}
+        id={item.upc}>
         <CardHeader className="px-4 pt-3 pb-0">
           <CardTitle className="text-xl font-semibold">{item.name}</CardTitle>
         </CardHeader>

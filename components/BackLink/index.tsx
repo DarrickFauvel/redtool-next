@@ -4,7 +4,7 @@ import Icon from "@/components/Icon"
 const BackLink = () => {
   return (
     <Link
-      className="flex items-center font-bold text-lg no-underline mb-8 gap-1 hover:text-black"
+      className="flex items-center font-bold text-lg no-underline mb-8 gap-1"
       href="/">
       <Icon icon="bi:arrow-left" />
       <span>Back</span>

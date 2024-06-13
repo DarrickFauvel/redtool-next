@@ -49,7 +49,7 @@ const ProducePage = () => {
           .map((item) => (
             <li key={item.name}>
               <button
-                className="flex items-center gap-1 border border-gray-300 rounded-lg py-1 pr-4 pl-3 no-underline text-black overflow-hidden cursor-pointer hover:border-gray-400"
+                className="flex items-center gap-1 bg-white text-black/80 border border-secondary hover:border-secondary/80 rounded-lg py-1 pr-4 pl-3 no-underline overflow-hidden cursor-pointer"
                 onClick={handleClick}
                 data-item-upc={item.upc}>
                 <Image

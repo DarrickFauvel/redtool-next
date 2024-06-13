@@ -4,6 +4,7 @@ import Icon from "@/components/Icon"
 import { useState } from "react"
 import { appTitle } from "@/lib/config"
 import Drawer from "./drawer"
+import { ModeToggle } from "@/components/ModeToggle"
 
 function Nav() {
   const [isMenuOpen, setIsMenuOpen] = useState(false)
@@ -25,13 +26,16 @@ function Nav() {
         <span className="tracking-wider">{appTitle}</span>
       </Link>
 
-      <Icon
-        className="w-auto cursor-pointer"
-        icon="lucide:menu"
-        onClick={handleClick}
-        height={40}
-      />
-      {<Drawer isMenuOpen={isMenuOpen} setIsMenuOpen={setIsMenuOpen} />}
+      <div className="flex gap-4">
+        <ModeToggle />
+        <Icon
+          className="w-auto cursor-pointer text-white"
+          icon="lucide:menu"
+          onClick={handleClick}
+          height={40}
+        />
+        {<Drawer isMenuOpen={isMenuOpen} setIsMenuOpen={setIsMenuOpen} />}
+      </div>
     </nav>
   )
 }
