@@ -11,8 +11,7 @@ const AboutPage = () => {
       <div className="flex flex-col gap-4">
         <p>
           <strong>{appTitle}</strong> is a web application project created by
-          Fulfillment Team Member, {authorData.name}, at Target Store #2480 in
-          Lowell, Massachusetts, USA.
+          {authorData.name} from Target Store #2480.
         </p>
         <p>
           It&apos;s purpose is to help me do my job at Target, more effectively
