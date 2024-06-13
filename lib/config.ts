@@ -1,4 +1,4 @@
-export const appTitle = "redTool"
+export const appTitle = "RedTool"
 
 export const activeMenuItemHighlight = null
 
