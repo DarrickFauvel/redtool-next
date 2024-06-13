@@ -22,7 +22,7 @@ export default function RootLayout({
       className={`${roboto_flex.className}`}
       suppressHydrationWarning>
       <body className="relative z-10 transition-colors duration-500">
-        <ThemeProvider attribute="class" defaultTheme="system" enableSystem>
+        <ThemeProvider attribute="class" defaultTheme="light" enableSystem>
           <div className="mx-auto">
             <Header />
             <main className="pt-8 pb-12">
