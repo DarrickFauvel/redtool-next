@@ -5,6 +5,8 @@ import { useState } from "react"
 import { appTitle } from "@/lib/config"
 import Drawer from "./drawer"
 import { ModeToggle } from "@/components/ModeToggle"
+import DrawerMenu from "@/components/DrawerMenu"
+import { Button } from "@/components/ui/button"
 
 function Nav() {
   const [isMenuOpen, setIsMenuOpen] = useState(false)
@@ -34,6 +36,9 @@ function Nav() {
           onClick={handleClick}
           height={40}
         />
+
+        <DrawerMenu />
+
         {<Drawer isMenuOpen={isMenuOpen} setIsMenuOpen={setIsMenuOpen} />}
       </div>
     </nav>

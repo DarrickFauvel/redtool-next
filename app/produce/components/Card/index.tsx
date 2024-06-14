@@ -37,6 +37,7 @@ const CardComponent: React.FC<Props> = ({ selectedProduceItem }) => {
           />
           {item.upc && <Barcode barcodeValue={item.upc} dpci={item.dpci} />}
         </CardContent>
+
         <div className="absolute w-8 h-8 -top-3 -right-3 flex justify-center items-center bg-red-500 hover:bg-red-500/95 rounded-full leading-none shadow-md cursor-pointer">
           <Icon className="text-white" icon="ep:close-bold" />
         </div>
